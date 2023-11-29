@@ -44,7 +44,7 @@ function flood_fill(x, y) {
     if (x < 0 || x > width || y < 0 || y > height) continue;
     let color = get_pixel(x, y);
     if (color !== 255) continue;
-    set(x, y, 200);
+    set_pixel(x, y, 200);
     stos.push([x, y - 1], [x, y + 1], [x - 1, y], [x + 1, y]);
   }
 }
